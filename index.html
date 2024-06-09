@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dig Digi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+
+    <div class="container" id="mobilePhone">
+        <div class="header_navigation">
+            <p>6: 46 AM</p>
+            <div id="block">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-battery"></i>
+                <i class="fas fa-wifi"></i>
+            </div>
+        </div>
+        <nav>
+            <div class="back">
+                <button type="button" id="clearButton"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="logo">
+                <h2>dig digi</h2>
+            </div>
+            <div class="option">
+                <button type="button" id="openBotPage"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+        </nav>
+
+
+        <div class="group">
+            <a href="">join the team</a>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+
+        <div class="receive">
+            <div class="one">
+                <img src="images/dig-logo.png" alt="">
+                <h1 id="diggedMine">0</h1>
+            </div>
+            <div class="two">
+                <p id="currentLevel">Beginner</p>
+            </div>
+        </div>
+
+
+        <div class="mining_area">
+            <img src="/images/miner.png" alt="" onclick="mineIcon()">
+        </div>
+
+
+        <div class="task">
+            <div class="reading">
+                <p id="rangeCounter"><span>100000</span></p>
+                <p>/ 100000</p>
+            </div> 
+            <input type="range" name="range" id="range" value="100000" min="0" max="100000" onchange="updateRange()">
+            
+        </div>
+
+        <div class="board">
+            <div class="box">
+                <!-- <img src="/images/rocket.png" alt=""> -->
+                <p>boost</p>
+            </div>
+            <div class="box">
+                <!-- <img src="/images/rocket.png" alt=""> -->
+                <p>earn</p>
+            </div>
+            <div class="box">
+                <!-- <img src="/images/rocket.png" alt=""> -->
+                <p>reward</p>
+            </div>
+        </div>
+
+
+        <div class="notice">
+            <h2>Dig Digi</h2>
+            <p>Changes that you made will not be saved!</p>
+            <div class="link">
+                <a href="">cancel</a>
+                <a href="">close anyway</a>
+            </div>
+        </div>
+
+        <div class="openBot">
+            <a href="">open bot</a>
+            <a href="">see lost</a>
+            <a href="">open bot</a>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
