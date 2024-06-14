@@ -2,6 +2,7 @@ const currentLevel = document.getElementById('currentLevel');
 const diggedMine = document.getElementById('diggedMine');
 const range = document.getElementById('range');
 const rangeCounter = document.getElementById('rangeCounter');
+const floatingText = document.getElementById('floating-text');
 
 let a = 0;
 let b = 100000;
@@ -18,9 +19,9 @@ function mineIcon(){
         currentLevel.innerText = 'Degens';
         
     }
-   
-    notice.style.display = 'none';
+    floatingText.style.display = 'none';
     updateRange();
+    display();
 }
 
 function updateRange() {
@@ -32,16 +33,45 @@ function updateRange() {
     }
 }
 
-// function updateRange(){
-   
+
+function display(){
+   if (mineIcon){
+    floatingText.style.display = 'flex';
+   }else{
+    floatingText.style.display = 'none';
+    }
     
-// }
+}
+
+
 
 const clearButton = document.getElementById('clearButton');
+const iClass = document.getElementById('iclass');
 const notice = document.querySelector('.notice');
+const openBot = document.querySelector('.openBot');
+const boost = document.querySelector('.boost')
 
 clearButton.addEventListener('click', ()=>{
     notice.style.display = 'flex';
 })
 
+function openBotPage() {
+    openBot.style.display = 'flex';
+}
 
+function openBoostPage() {
+    boost.style.display = 'flex';
+}
+
+function enlargeHeight() {
+    boost.style.height = '700px';
+    iClass.style.display = 'flex';
+}
+function reduceHeight() {
+    boost.style.height = '500px';
+    iClass.style.display = 'none';
+}
+
+function closeBoost() {
+    boost.style.display = 'none';
+}

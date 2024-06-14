@@ -33,7 +33,7 @@
                 <h2>dig digi</h2>
             </div>
             <div class="option">
-                <button type="button" id="openBotPage"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                <button type="button" onclick="openBotPage()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
             </div>
         </nav>
 
@@ -55,6 +55,9 @@
         </div>
 
 
+        <p id="floating-text">+1</p>
+
+
         <div class="mining_area">
             <img src="/DigDigi/images/miner.png" alt="" onclick="mineIcon()">
         </div>
@@ -70,7 +73,7 @@
         </div>
 
         <div class="board">
-            <div class="box">
+            <div class="box" onclick="openBoostPage()">
                 <!-- <img src="/images/rocket.png" alt=""> -->
                 <p>boost</p>
             </div>
@@ -99,7 +102,21 @@
             <a href="">see lost</a>
             <a href="">open bot</a>
         </div>
+
+
+        <div class="boost">
+            <div class="boost-nav">
+                <i class="fas fa-chevron-down" onclick="reduceHeight()" id="iclass"></i>
+                <i class="fas fa-minus" onclick="enlargeHeight()"></i>
+                <i class="fas fa-xmark" onclick="closeBoost()"></i>
+            </div>
+            <div class="multi-tap">
+                <p>+2 taps</p>
+            </div>
+        </div>
     </div>
+
+
 
 
     <script src="script.js"></script>
